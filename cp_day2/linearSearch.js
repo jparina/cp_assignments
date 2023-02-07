@@ -12,5 +12,16 @@ function charSearch(char, array) {
   }
 }
 
+const globalLinearSearch = (find, arrayToSearch) => {
+  let locations = []
+  for (let i = 0; i < arrayToSearch.length; i++) {
+    if (arrayToSearch[i] === find) {
+       locations.push(i)
+    }
+  }
+  return locations
+}
 console.log(linearSearch(1, [5,3,4,1])) // return 3
-console.log(linearSearch('s', ['a','s','f'])) // return 1
+console.log(linearSearch('s', ['a','s','f', 'a'])) // return 1
+console.log(globalLinearSearch('s', ['a','s','f','s'])) // return 1
+
