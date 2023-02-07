@@ -15,28 +15,33 @@ The second time you say GOODBYE! she says LATER, SKATER! and the program exits.
 
 function deafGrandma() {
   const prompt = require('prompt-sync')({sigint: true});
-  let gooodbyeCount = 0
+  let last = null
   let grandma = "HEY KID!"
   
-  while (gooodbyeCount < 2) {
+  while (true) {
     let response = prompt(`${grandma}`);
-    if (response === "GOODBYE!" && gooodbyeCount === 1) {
-      gooodbyeCount += 1
+    if (response === "GOODBYE!" && last === true) {
       grandma = "LATER, SKATER!"
+      break
     }
-    else if (response === "GOODBYE!" && gooodbyeCount === 0) {
-      gooodbyeCount += 1
+    else if (response === "GOODBYE!" && last !== true) {
+      last = true
       grandma = "LEAVING SO SOON?"
+      continue
     }
     else if (response === '') {
       grandma = "WHAT?!"
+      
     }
     else if (response.toUpperCase() === response) {
       grandma = "NO, NOT SINCE 1946!"
+      
     }
     else {
       grandma = "SPEAK UP, KID!"
+      
     }
+    last = null
   }
   console.log(`${grandma}`)
 }
