@@ -28,6 +28,9 @@ function deafGrandma() {
       gooodbyeCount += 1
       grandma = "LEAVING SO SOON?"
     }
+    else if (response === '') {
+      grandma = "WHAT?!"
+    }
     else if (response.toUpperCase() === response) {
       grandma = "NO, NOT SINCE 1946!"
     }
