@@ -8,6 +8,6 @@ const findFibonacci = (num, memo = {}) => {
 }
 
 
-console.log(findFibonacci(45))
+console.log(findFibonacci(100))
 console.log(findFibonacci(10))
 console.log(findFibonacci(5))
