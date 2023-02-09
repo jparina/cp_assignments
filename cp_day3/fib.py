@@ -38,10 +38,10 @@ def fib_memo(n, memo = {}):
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
     
-print(fib_memo(1))
-print(fib_memo(2))
-print(fib_memo(3))
-print(fib_memo(5))
-print(fib_memo(8))
-print(fib_memo(13))
-print(fib_memo(21))
+print(fib_memo(100))
+# print(fib_memo(2))
+# print(fib_memo(3))
+# print(fib_memo(5))
+# print(fib_memo(8))
+# print(fib_memo(13))
+# print(fib_memo(21))

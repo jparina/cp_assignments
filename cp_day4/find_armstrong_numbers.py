@@ -21,7 +21,11 @@ def find_armstrong_numbers(num):
 
 # given a number n, determine if it's an armstrong number
 def useful_armstrong(n):
-    num_to_array = 
+    num_to_array = list(map(int , list(str(n))))
+    
+    
 
 # print(find_armstrong_numbers(999))
 # print(armstrong_helper([3,7,1]))
+
+useful_armstrong(954)
