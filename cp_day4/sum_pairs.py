@@ -7,7 +7,7 @@ def sum_pairs(array_nums, needed_sum):
     while i < len(array_nums):
         sum_map[array_nums[i]] = i
         i += 1
-    
+    print(sum_map)
     for i in range(len(array_nums)):
         pair = []
         num_to_find = needed_sum - array_nums[i]

@@ -36,6 +36,7 @@ def useful_armstrong(n):
 # print(find_armstrong_numbers(999))
 # print(armstrong_helper([3,7,1]))
 
-print(useful_armstrong(371))
+# print(useful_armstrong(371))
 # print(useful_armstrong(9))
 # print(useful_armstrong(0))
+
