@@ -1,5 +1,5 @@
 class User:
-    def __init__(self, name, email, dl):
+    def __init__(self, name, email, dl) -> None:
         self.name = name
         self.email = email
         self.license = dl
