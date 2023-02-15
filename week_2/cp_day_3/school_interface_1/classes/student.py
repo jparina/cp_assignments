@@ -3,7 +3,7 @@ import csv
 
 class Student(Person):
     def __init__(self, name, age, role, school_id, password) -> None:
-        super().__init__(name, age, role, school_id, password)
+        super().__init__(name, age, role, school_id, password) 
 
     def all_students():
         array_students = []
