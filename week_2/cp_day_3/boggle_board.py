@@ -4,6 +4,7 @@ class BoggleBoard:
     starting_row = ["_","_","_","_"]
     def __init__(self)-> None:
         self.rows = [[*self.starting_row],[*self.starting_row],[*self.starting_row],[*self.starting_row]]
+        
     
     # function prints each elem in each row of self so that the output looks like a board
     # joins each elem in a row and prints      
@@ -30,16 +31,10 @@ class BoggleBoard:
                     row[index] = elem[dice_roll] + '  '
                     
                     if row[index] == 'Q  ':
-                        row[index] = 'Qu'
+                        row[index] = 'Qu '
                 
         return self.show_board()
-        
-    
-dice = set()
-d = {'dice1' : [1,2,3,4,5], 'dice2' : [6,7,8,9,0]}
-
-dice.add(random.choice(list(d.keys())))
 
 new_board = BoggleBoard()
-
+new_board.show_board()
 new_board.shake()
