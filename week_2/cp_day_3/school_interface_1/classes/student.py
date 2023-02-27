@@ -14,6 +14,6 @@ class Student(Person):
         with open('/Users/joshparina/repos/cp_assignments/week_2/cp_day_3/school_interface_1/data/students.csv', mode='r') as student_file:
             student_data = csv.DictReader(student_file)
             for row in student_data:
-                array_students.append(Student(**dict(row)))
+                array_students.append(cls(**dict(row)))
         return array_students
             
